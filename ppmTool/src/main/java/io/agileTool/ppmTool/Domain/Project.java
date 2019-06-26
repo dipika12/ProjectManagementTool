@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class project {
+public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -82,7 +82,7 @@ public class project {
     private Date created_At;
     private Date updated_At;
 
-    public project() {
+    public Project() {
     }
 
     @PrePersist
