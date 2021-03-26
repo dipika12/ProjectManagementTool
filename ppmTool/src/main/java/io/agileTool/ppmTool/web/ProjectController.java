@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProjectController {
 
     @Autowired
-    ProjectService projectService;
+    private ProjectService projectService;
 
     @PostMapping("")
     public ResponseEntity<Project> createNewProject(@RequestBody Project project) {
